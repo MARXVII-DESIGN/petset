@@ -1,0 +1,126 @@
+:root {
+  --dk-blue: #2b2d42;
+  --lt-grey: #8d99ae;
+  --white: #edf2f4;
+  --red: #ef233c;
+  --dk-red: #d90429;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.pl-6 {
+  padding-left: 4rem;
+}
+@media (max-width: 768px) {
+  .pl-6 {
+    padding-left: 15px;
+  }
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: var(--dk-blue);
+  min-height: 10vh;
+  color: white;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+#logo {
+  font-weight: 900;
+  font-size: 45px;
+  color: var(--red);
+}
+
+/* Search Bar */
+#search-bar input {
+  font-weight: 300;
+  width: 202px;
+  height: 40px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: none;
+  padding-left: 24px;
+  padding-right: 30px;
+  position: relative;
+  left: 24px;
+  z-index: 0;
+}
+#search-bar button {
+  font-weight: 300;
+  color: white;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: var(--lt-grey);
+  position: relative;
+  z-index: 1;
+}
+#cart {
+  font-size: 2rem;
+  color: var(--red);
+}
+/* Define Navbar Toggler Style */
+
+/* Hero Image*/
+#hero-container {
+  height: 90vh;
+  background-image: url(/images/dog-mountain.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+
+#title {
+  height: 100%;
+}
+
+h1 /* Needs ID */ {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+}
+h2 /* Needs ID */ {
+  font-size: 1.25rem;
+  color: #fff;
+}
+.btn-primary {
+  background-color: var(--red);
+  border: var(--red);
+  border-radius: 20px;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+/* Shop For Pet Supplies */
+#supplies-title-container {
+  height: 130px;
+}
+#supplies-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--red);
+  text-transform: capitalize;
+}
+.supplies-category-container {
+  border: solid 1px var(--dk-blue);
+  border-radius: 10px;
+  height: 337px;
+}
