@@ -101,6 +101,7 @@ h2 /* Needs ID */ {
   font-size: 1.25rem;
   color: #fff;
 }
+
 .btn-primary {
   background-color: var(--red);
   border: var(--red);
@@ -110,10 +111,14 @@ h2 /* Needs ID */ {
 }
 
 /* Shop For Pet Supplies */
-#supplies-title-container {
+#products-container {
+  padding-bottom: 42px;
+}
+#supplies-title-container,
+#brand-title-container {
   height: 130px;
 }
-#supplies-title {
+.red-title {
   font-size: 2rem;
   font-weight: 700;
   color: var(--red);
@@ -123,4 +128,52 @@ h2 /* Needs ID */ {
   border: solid 1px var(--dk-blue);
   border-radius: 10px;
   height: 337px;
+  width: 282px;
+  position: relative;
+  margin: 0 59px;
+}
+.supplies-image-container {
+  height: 192px;
+  min-width: 148px;
+  position: absolute;
+  left: -74px;
+}
+.supplies-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.supplies-content-container {
+  width: 100%;
+  position: relative;
+  padding-left: 82px;
+  padding-right: 8px;
+}
+.supplies-content-body {
+  font-size: 14px;
+}
+/* About Us Section */
+#about-us-section {
+  max-width: 1016px;
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+.about-us-section-container {
+  padding: 32px 0;
+}
+.why-shop-copy-container {
+  padding-left: 64px;
+}
+.about-image {
+  border-radius: 10px;
+  box-shadow: 30px -30px 0px 10px #ef233c;
+}
+
+/* Brands We Support */
+#supported-brands {
+  background-color: var(--dk-blue);
+  height: 400px;
+}
+.supported-brands-title {
+  color: #fff;
 }
