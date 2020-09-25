@@ -252,29 +252,86 @@
       >
         <h3 class="supported-brands-title">Brands We Support</h3>
       </div>
-      <div class="container-fluid d-flex justify-content-around">
-        <div style="height: 160px; width: 160px; background-color: #fff"></div>
-        <div style="height: 160px; width: 160px; background-color: #fff"></div>
-        <div style="height: 160px; width: 160px; background-color: #fff"></div>
-        <div style="height: 160px; width: 160px; background-color: #fff"></div>
-        <div style="height: 160px; width: 160px; background-color: #fff"></div>
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="brand-logo-image" style="height: 160px; width: 160px">
+          <img src="/images/acana-logo.png" />
+        </div>
+        <div class="brand-logo-image" style="height: 160px; width: 160px">
+          <img src="/images/dogswell-logo.png" />
+        </div>
+        <div class="brand-logo-image">
+          <img src="/images/nutro-logo.png" />
+        </div>
+        <div class="brand-logo-image">
+          <img src="/images/orijen-logo.png" />
+        </div>
+        <div class="brand-logo-image">
+          <img src="/images/acana-logo.png" />
+        </div>
       </div>
     </section>
+
     <!-- Newsletter Sign Up -->
-    <section class="container-fluid" id="newsletter-section">
-      <h3>Want to Sign Up for PetSet Deals? Join Our Newsletter!</h3>
-      <form action="" id="newsletter-form">
-        <label for="name">Name</label>
-        <input type="text" name="name" placeholder="Name" id="" />
-        <label for="email">Email</label>
-        <input type="text" name="Email" placeholder="Name" id="" />
-        <button id="newsletter-submit-button">Join</button>
+    <section
+      class="container-fluid d-flex justify-content-center align-items-center flex-column"
+      id="newsletter-section"
+    >
+      <h3 class="white" id="newsletter-title">
+        Want to Sign Up for PetSet Deals? Join Our Newsletter!
+      </h3>
+
+      <form class="container-fluid" action="" id="newsletter-form">
+        <div class="form-row justify-content-center">
+          <div class="col-lg-4">
+            <label for="name">Name</label>
+            <input
+              class="form-control"
+              type="text"
+              name="name"
+              placeholder="Name"
+              id=""
+            />
+          </div>
+          <div class="col-lg-4">
+            <label for="email">Email</label>
+            <!-- Set input type as "email" for BS validation -->
+            <input
+              class="form-control"
+              type="email"
+              name="Email"
+              placeholder="Name"
+              id=""
+            />
+          </div>
+          <button class="btn col-lg-2" id="newsletter-submit-button">
+            Join
+          </button>
+        </div>
       </form>
     </section>
     <!-- Footer -->
     <footer>
-      Home Pet Products Dog Supplies Cat Supplies Other Friends Supplies About
-      Donate
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>
+            Pet
+            <ul>
+              <li>Dog Supplies</li>
+              <li>Cat Supplies</li>
+              <li>Other Friends Supplies</li>
+            </ul>
+          </li>
+          <li>About</li>
+          <li>Donate</li>
+        </ul>
+      </div>
+      <div>
+        <h3>We Are Located At:</h3>
+        <div id="map"></div>
+        <h4>123 Address St. Sometown, CA</h4>
+        <h4>(555) 555-5555</h4>
+      </div>
     </footer>
 
     <!-- Required JS -->
