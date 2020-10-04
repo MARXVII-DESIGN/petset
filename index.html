@@ -254,36 +254,36 @@
       </div>
       <div class="container-fluid d-flex justify-content-center">
         <div class="brand-logo-image" style="height: 160px; width: 160px">
-          <img src="/images/acana-logo.png" />
+          <img src="images/acana-logo.png" />
         </div>
         <div class="brand-logo-image" style="height: 160px; width: 160px">
-          <img src="/images/dogswell-logo.png" />
+          <img src="images/dogswell-logo.png" />
         </div>
         <div class="brand-logo-image">
-          <img src="/images/nutro-logo.png" />
+          <img src="images/nutro-logo.png" />
         </div>
         <div class="brand-logo-image">
-          <img src="/images/orijen-logo.png" />
+          <img src="images/orijen-logo.png" />
         </div>
         <div class="brand-logo-image">
-          <img src="/images/acana-logo.png" />
+          <img src="images/acana-logo.png" />
         </div>
       </div>
     </section>
 
     <!-- Newsletter Sign Up -->
     <section
-      class="container-fluid d-flex justify-content-center align-items-center flex-column"
+      class="container-fluid d-flex justify-content-center align-items-center flex-column px-lg-132"
       id="newsletter-section"
     >
-      <h3 class="white" id="newsletter-title">
+      <h3 class="white mb-3" id="newsletter-title">
         Want to Sign Up for PetSet Deals? Join Our Newsletter!
       </h3>
 
       <form class="container-fluid" action="" id="newsletter-form">
         <div class="form-row justify-content-center">
           <div class="col-lg-4">
-            <label for="name">Name</label>
+            <label class="d-none" for="name">Name</label>
             <input
               class="form-control"
               type="text"
@@ -293,13 +293,13 @@
             />
           </div>
           <div class="col-lg-4">
-            <label for="email">Email</label>
+            <label class="d-none" for="email">Email</label>
             <!-- Set input type as "email" for BS validation -->
             <input
               class="form-control"
               type="email"
               name="Email"
-              placeholder="Name"
+              placeholder="Email"
               id=""
             />
           </div>
@@ -310,30 +310,72 @@
       </form>
     </section>
     <!-- Footer -->
-    <footer>
-      <div>
-        <ul>
-          <li>Home</li>
-          <li>
-            Pet
-            <ul>
-              <li>Dog Supplies</li>
-              <li>Cat Supplies</li>
-              <li>Other Friends Supplies</li>
-            </ul>
-          </li>
-          <li>About</li>
-          <li>Donate</li>
-        </ul>
-      </div>
-      <div>
-        <h3>We Are Located At:</h3>
-        <div id="map"></div>
-        <h4>123 Address St. Sometown, CA</h4>
-        <h4>(555) 555-5555</h4>
-      </div>
-    </footer>
+    <div
+      class="container-fluid d-flex justify-content-center py-5 px-lg-132"
+      id="footer"
+    >
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="col-lg-6 d-flex justify-content-end" id="footer-sitemap">
+          <img
+            style="
+              background-color: var(--red);
+              min-width: 160px;
+              height: 160px;
+            "
+            src=""
+          />
+          <ul id="footer-link-list">
+            <li class="red-title">Home</li>
+            <li class="red-title">
+              Pet
+              <ul id="footer-link-pet-list">
+                <li class="pb-2">Dog Supplies</li>
+                <li class="pb-2">Cat Supplies</li>
+                <li class="pb-2">Other Friends Supplies</li>
+              </ul>
+            </li>
+            <li class="red-title">About</li>
+            <li class="red-title">Donate</li>
+          </ul>
+        </div>
 
+        <div class="col-lg-6" id="footer-location">
+          <h3 class="red-title mb-3">We Are Located At:</h3>
+          <div
+            class="mb-3"
+            id="map"
+            style="
+              width: 415px;
+              height: 162px;
+              background-color: var(--lt-grey);
+            "
+          ></div>
+          <h4 class="mb-3">123 Address St. Sometown, CA</h4>
+          <h4 class="mb-3">(555) 555-5555</h4>
+          <h3 class="red-title mb-3">Follow Us On Social!</h3>
+          <div id="social-icons">
+            <div class="social-icon-container d-inline-flex mr-3">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="social-icon-container d-inline-flex mr-3">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="social-icon-container d-inline-flex mr-3">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="social-icon-container d-inline-flex mr-3">
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="container-fluid d-flex justify-content-center align-items-center"
+      id="copyright"
+    >
+      <p>PetSet Supplies Co. | Copyright 2020. All Rights Reserved.</p>
+    </footer>
     <!-- Required JS -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
